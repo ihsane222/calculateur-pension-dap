@@ -776,11 +776,11 @@
     <!-- Header -->
     <div class="calc-header">
         <div class="brand-logo">
-            <div class="logo-mark">DAP</div>
-            <div class="logo-text">Groupe DAP</div>
+            <!-- Remplacer par : <img src="logo-dap.png" alt="Groupe DAP" style="height:40px;"> -->
+            <div class="logo-text">GROUPE DAP</div>
         </div>
         <h1>Calculateur de Pension</h1>
-        <p>Estimez votre pension legale belge en quelques clics</p>
+        <p>Estimez votre pension légale belge en quelques clics</p>
         <div class="badge-mypension">MyPension.be en pause ? Faites votre estimation ici</div>
     </div>
 
@@ -794,8 +794,8 @@
         </div>
         <div class="step-labels">
             <div class="step-label active" id="lbl1">Profil</div>
-            <div class="step-label" id="lbl2">Carriere</div>
-            <div class="step-label" id="lbl3">Resultat</div>
+            <div class="step-label" id="lbl2">Carrière</div>
+            <div class="step-label" id="lbl3">Résultat</div>
             <div class="step-label" id="lbl4">Conseil</div>
         </div>
     </div>
@@ -812,12 +812,12 @@
                     <label class="radio-card" onclick="selectCard(this, 'statut', 'salarie')">
                         <input type="radio" name="statut" value="salarie">
                         <div class="card-icon">&#x1F4BC;</div>
-                        <div class="card-label">Salarie</div>
+                        <div class="card-label">Salarié</div>
                     </label>
                     <label class="radio-card" onclick="selectCard(this, 'statut', 'independant')">
                         <input type="radio" name="statut" value="independant">
                         <div class="card-icon">&#x1F3E2;</div>
-                        <div class="card-label">Independant</div>
+                        <div class="card-label">Indépendant</div>
                     </label>
                     <label class="radio-card" onclick="selectCard(this, 'statut', 'fonctionnaire')">
                         <input type="radio" name="statut" value="fonctionnaire">
@@ -828,7 +828,7 @@
             </div>
 
             <div class="field-group">
-                <label for="birthYear">Annee de naissance</label>
+                <label for="birthYear">Année de naissance</label>
                 <input type="number" id="birthYear" placeholder="ex: 1975" min="1940" max="2005">
             </div>
 
@@ -838,15 +838,15 @@
                     <label class="radio-card" onclick="selectCard(this, 'situation', 'isole')">
                         <input type="radio" name="situation" value="isole">
                         <div class="card-icon">&#x1F464;</div>
-                        <div class="card-label">Isole</div>
+                        <div class="card-label">Isolé</div>
                     </label>
                     <label class="radio-card" onclick="selectCard(this, 'situation', 'menage')">
                         <input type="radio" name="situation" value="menage">
                         <div class="card-icon">&#x1F465;</div>
-                        <div class="card-label">Menage</div>
+                        <div class="card-label">Ménage</div>
                     </label>
                 </div>
-                <div class="hint">Taux menage si votre conjoint n'a pas ou peu de revenus propres</div>
+                <div class="hint">Taux ménage si votre conjoint n'a pas ou peu de revenus propres</div>
             </div>
 
             <div class="btn-row">
@@ -854,9 +854,9 @@
             </div>
         </div>
 
-        <!-- STEP 2: Carriere -->
+        <!-- STEP 2: Carrière -->
         <div class="step" id="step2">
-            <div class="step-title">Votre carriere</div>
+            <div class="step-title">Votre carrière</div>
 
             <div class="field-group">
                 <label for="salaire" id="salaireLabel">Salaire brut annuel actuel (&euro;)</label>
@@ -865,14 +865,14 @@
             </div>
 
             <div class="field-group">
-                <label for="anneesCarriere">Annees de carriere deja prestees</label>
+                <label for="anneesCarriere">Années de carrière déjà prestées</label>
                 <input type="number" id="anneesCarriere" placeholder="ex: 20" min="0" max="50">
             </div>
 
             <div class="field-group">
-                <label for="anneesRestantes">Annees restantes jusqu'a la pension</label>
-                <input type="number" id="anneesRestantes" placeholder="calcule automatiquement" min="0" max="45">
-                <div class="hint" id="ageRetraiteHint">Age legal de la pension : calcule a l'etape suivante</div>
+                <label for="anneesRestantes">Années restantes jusqu'à la pension</label>
+                <input type="number" id="anneesRestantes" placeholder="calculé automatiquement" min="0" max="45">
+                <div class="hint" id="ageRetraiteHint">Âge légal de la pension : calculé à l'étape suivante</div>
             </div>
 
             <div class="btn-row">
@@ -881,22 +881,22 @@
             </div>
         </div>
 
-        <!-- STEP 3: Resultat -->
+        <!-- STEP 3: Résultat -->
         <div class="step" id="step3">
             <div class="step-title">Votre estimation de pension</div>
 
             <div class="result-card">
-                <div class="result-label">Pension mensuelle brute estimee</div>
+                <div class="result-label">Pension mensuelle brute estimée</div>
                 <div class="result-amount" id="resultAmount">&mdash; &euro;</div>
                 <div class="result-net" id="resultNet"></div>
                 <div class="result-details">
                     <div class="result-detail">
                         <div class="detail-value" id="resultAge">&mdash;</div>
-                        <div class="detail-label">Age pension</div>
+                        <div class="detail-label">Âge pension</div>
                     </div>
                     <div class="result-detail">
                         <div class="detail-value" id="resultAnnees">&mdash;</div>
-                        <div class="detail-label">Annees carriere</div>
+                        <div class="detail-label">Années carrière</div>
                     </div>
                     <div class="result-detail">
                         <div class="detail-value" id="resultTaux">&mdash;</div>
@@ -904,12 +904,12 @@
                     </div>
                     <div class="result-detail">
                         <div class="detail-value" id="resultNetMensuel">&mdash;</div>
-                        <div class="detail-label">Net estime</div>
+                        <div class="detail-label">Net estimé</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Pecule de vacances -->
+            <!-- Pécule de vacances -->
             <div class="pecule-section" id="peculeSection" style="display:none;">
                 <div class="pecule-icon">&#x1F334;</div>
                 <div class="pecule-text" id="peculeText"></div>
@@ -917,7 +917,7 @@
 
             <!-- Gap analysis -->
             <div class="gap-section" id="gapSection">
-                <div class="gap-title" id="gapTitle">&#x26A0;&#xFE0F; Ecart avec votre revenu actuel</div>
+                <div class="gap-title" id="gapTitle">&#x26A0;&#xFE0F; Écart avec votre revenu actuel</div>
                 <div class="gap-bar-wrapper">
                     <div class="gap-bar" id="gapBar" style="width: 0%; background: var(--accent);"></div>
                 </div>
@@ -926,7 +926,7 @@
 
             <!-- Confidence -->
             <div class="confidence-section" id="confidenceSection">
-                <div class="conf-label">Fiabilite de l'estimation
+                <div class="conf-label">Fiabilité de l'estimation
                     <span class="confidence-dots" id="confidenceDots"></span>
                 </div>
                 <div id="confidenceText"></div>
@@ -950,7 +950,7 @@
 
             <div class="btn-row">
                 <button class="btn btn-secondary" onclick="goToStep(2)">Modifier</button>
-                <button class="btn btn-primary" onclick="goToStep(4)">Combler l'ecart &rarr;</button>
+                <button class="btn btn-primary" onclick="goToStep(4)">Combler l'écart &rarr;</button>
             </div>
         </div>
 
@@ -959,8 +959,8 @@
             <div class="step-title">Optimisez votre pension</div>
 
             <div class="cta-section" id="ctaSection">
-                <h3 id="ctaTitle">Comblez l'ecart avec les bonnes solutions</h3>
-                <p id="ctaDesc">Un courtier DAP peut vous aider a constituer un complement de pension adapte a votre situation.</p>
+                <h3 id="ctaTitle">Comblez l'écart avec les bonnes solutions</h3>
+                <p id="ctaDesc">Un courtier DAP peut vous aider à constituer un complément de pension adapté à votre situation.</p>
 
                 <div class="solutions-grid" id="solutionsGrid">
                     <!-- Rempli dynamiquement selon le statut -->
@@ -968,7 +968,7 @@
 
                 <div class="field-group">
                     <label for="contactNom">Votre nom</label>
-                    <input type="text" id="contactNom" placeholder="Nom et prenom">
+                    <input type="text" id="contactNom" placeholder="Nom et prénom">
                 </div>
 
                 <div class="field-group">
@@ -977,20 +977,20 @@
                 </div>
 
                 <div class="field-group">
-                    <label for="contactTel">Telephone <span style="font-weight:400;color:var(--text-light)">(optionnel)</span></label>
+                    <label for="contactTel">Téléphone <span style="font-weight:400;color:var(--text-light)">(optionnel)</span></label>
                     <input type="tel" id="contactTel" placeholder="0470 00 00 00">
                 </div>
 
                 <div class="btn-row">
                     <button class="btn btn-secondary" onclick="goToStep(3)">Retour</button>
-                    <button class="btn btn-primary" onclick="envoyerContact()">Etre recontacte</button>
+                    <button class="btn btn-primary" onclick="envoyerContact()">Être recontacté</button>
                 </div>
             </div>
 
             <div class="success-message" id="successMsg">
                 <div class="check-icon">&#x2713;</div>
-                <h3>Demande envoyee !</h3>
-                <p>Un courtier DAP vous recontactera dans les plus brefs delais pour analyser votre situation et vous proposer les meilleures solutions.</p>
+                <h3>Demande envoyée !</h3>
+                <p>Un courtier DAP vous recontactera dans les plus brefs délais pour analyser votre situation et vous proposer les meilleures solutions.</p>
             </div>
         </div>
 
@@ -998,15 +998,15 @@
 
     <!-- Legal -->
     <div class="legal-note">
-        <strong>Avertissement :</strong> Cette estimation est fournie a titre purement indicatif et ne constitue en aucun cas un document officiel,
-        une promesse de pension ou un conseil financier. Les calculs sont bases sur une <strong>simplification</strong>
-        des regles de la pension legale belge et utilisent votre salaire actuel comme reference pour l'ensemble de la carriere.<br><br>
-        <strong>Parametres utilises :</strong> Plafonds salariaux 2024 (salaries : 77 924 &euro;, independants : 73 298 &euro;),
-        pensions minimums garanties au 01/01/2024, bareme fiscal simplifie. Ces montants sont indexes annuellement.<br><br>
-        Les montants reels de votre pension peuvent differer significativement en fonction de l'evolution de votre carriere,
+        <strong>Avertissement :</strong> Cette estimation est fournie à titre purement indicatif et ne constitue en aucun cas un document officiel,
+        une promesse de pension ou un conseil financier. Les calculs sont basés sur une <strong>simplification</strong>
+        des règles de la pension légale belge et utilisent votre salaire actuel comme référence pour l'ensemble de la carrière.<br><br>
+        <strong>Paramètres utilisés :</strong> Plafonds salariaux 2024 (salariés : 77 924 &euro;, indépendants : 73 298 &euro;),
+        pensions minimums garanties au 01/01/2024, barème fiscal simplifié. Ces montants sont indexés annuellement.<br><br>
+        Les montants réels de votre pension peuvent différer significativement en fonction de l'évolution de votre carrière,
         des indexations futures et de votre historique salarial complet. Pour une estimation officielle, consultez
-        <strong>mypension.be</strong> (des sa reouverture) ou le <strong>Service federal des Pensions</strong> (SFP).<br><br>
-        Simulateur propose par le <strong>Groupe DAP</strong>, courtier en assurances. &copy; 2024
+        <strong>mypension.be</strong> (dès sa réouverture) ou le <strong>Service fédéral des Pensions</strong> (SFP).<br><br>
+        Simulateur proposé par le <strong>Groupe DAP</strong>, courtier en assurances. &copy; 2024
     </div>
 
 </div>
@@ -1152,25 +1152,25 @@
         // Carrière longue restante = moins fiable (salaire peut évoluer)
         if (state.anneesRestantes > 20) {
             score -= 1;
-            raisons.push('Carriere restante longue (' + state.anneesRestantes + ' ans) : votre salaire evoluera probablement.');
+            raisons.push('Carrière restante longue (' + state.anneesRestantes + ' ans) : votre salaire évoluera probablement.');
         } else if (state.anneesRestantes > 10) {
-            raisons.push('Carriere restante de ' + state.anneesRestantes + ' ans : le salaire actuel peut encore evoluer.');
+            raisons.push('Carrière restante de ' + state.anneesRestantes + ' ans : le salaire actuel peut encore évoluer.');
         }
 
         // Carrière incomplète
         if (totalAnnees < 30) {
             score -= 1;
-            raisons.push('Carriere incomplete (' + totalAnnees + '/45 ans) : le resultat est plus incertain.');
+            raisons.push('Carrière incomplète (' + totalAnnees + '/45 ans) : le résultat est plus incertain.');
         }
 
         // Indépendant = revenus plus variables
         if (state.statut === 'independant') {
-            raisons.push('Les revenus d\'independant sont plus variables d\'annee en annee.');
+            raisons.push('Les revenus d\'indépendant sont plus variables d\'année en année.');
         }
 
         // Fonctionnaire = tantième peut varier
         if (state.statut === 'fonctionnaire') {
-            raisons.push('Le tantieme 1/60 est utilise (le plus courant). Certaines categories ont un tantieme plus favorable (1/48, 1/55).');
+            raisons.push('Le tantième 1/60 est utilisé (le plus courant). Certaines catégories ont un tantième plus favorable (1/48, 1/55).');
         }
 
         // Salaire élevé = proche du plafond = plus prévisible
@@ -1195,20 +1195,20 @@
     function getSolutions(statut) {
         const solutions = {
             salarie: [
-                { nom: 'Epargne-pension', desc: 'Avantage fiscal jusqu\'a 1 310 &euro;/an', highlight: true },
-                { nom: 'Epargne long terme', desc: 'Assurance vie Branche 21/23', highlight: false },
-                { nom: 'Epargne libre', desc: 'Fonds, ETF, immobilier', highlight: false }
+                { nom: 'Épargne-pension', desc: 'Avantage fiscal jusqu\'à 1 310 &euro;/an', highlight: true },
+                { nom: 'Épargne long terme', desc: 'Assurance vie Branche 21/23', highlight: false },
+                { nom: 'Épargne libre', desc: 'Fonds, ETF, immobilier', highlight: false }
             ],
             independant: [
-                { nom: 'PLCI', desc: 'Pension Libre Complementaire', highlight: true },
+                { nom: 'PLCI', desc: 'Pension Libre Complémentaire', highlight: true },
                 { nom: 'EIP', desc: 'Engagement Individuel de Pension', highlight: true },
-                { nom: 'Epargne-pension', desc: 'Avantage fiscal 30%', highlight: false },
+                { nom: 'Épargne-pension', desc: 'Avantage fiscal 30%', highlight: false },
                 { nom: 'Convention de pension', desc: 'Pour dirigeants d\'entreprise', highlight: false }
             ],
             fonctionnaire: [
-                { nom: 'Epargne-pension', desc: 'Avantage fiscal jusqu\'a 1 310 &euro;/an', highlight: true },
-                { nom: 'Epargne long terme', desc: 'Assurance vie Branche 21/23', highlight: false },
-                { nom: 'Epargne libre', desc: 'Diversification patrimoniale', highlight: false }
+                { nom: 'Épargne-pension', desc: 'Avantage fiscal jusqu\'à 1 310 &euro;/an', highlight: true },
+                { nom: 'Épargne long terme', desc: 'Assurance vie Branche 21/23', highlight: false },
+                { nom: 'Épargne libre', desc: 'Diversification patrimoniale', highlight: false }
             ]
         };
         return solutions[statut] || solutions.salarie;
@@ -1238,7 +1238,7 @@
             hint.textContent = 'Plafond pris en compte : ' + Math.round(CONFIG.plafonds.independant).toLocaleString('fr-BE') + ' \u20AC/an (' + annee + ')';
         } else if (state.statut === 'fonctionnaire') {
             label.textContent = 'Traitement brut annuel actuel (\u20AC)';
-            hint.textContent = 'Calcul base sur le traitement de reference (tantieme 1/' + CONFIG.tantieme + ')';
+            hint.textContent = 'Calcul basé sur le traitement de référence (tantième 1/' + CONFIG.tantieme + ')';
         } else {
             label.textContent = 'Salaire brut annuel actuel (\u20AC)';
             hint.textContent = 'Plafond pris en compte : ' + Math.round(CONFIG.plafonds.salarie).toLocaleString('fr-BE') + ' \u20AC/an (' + annee + ')';
@@ -1265,7 +1265,7 @@
         state.anneesRestantes = restantes;
 
         document.getElementById('ageRetraiteHint').textContent =
-            'Age legal de la pension : ' + agePension + ' ans (ne en ' + birthYear + ')';
+            'Âge légal de la pension : ' + agePension + ' ans (né en ' + birthYear + ')';
     }
 
     document.getElementById('birthYear').addEventListener('input', updateAnneesRestantes);
@@ -1276,9 +1276,9 @@
     function goToStep(n) {
         if (n > state.step || n > 1) {
             if (state.step === 1 && n === 2) {
-                if (!state.statut) return alert('Veuillez selectionner votre statut.');
-                if (!document.getElementById('birthYear').value) return alert('Veuillez entrer votre annee de naissance.');
-                if (!state.situation) return alert('Veuillez selectionner votre situation.');
+                if (!state.statut) return alert('Veuillez sélectionner votre statut.');
+                if (!document.getElementById('birthYear').value) return alert('Veuillez entrer votre année de naissance.');
+                if (!state.situation) return alert('Veuillez sélectionner votre situation.');
                 state.birthYear = parseInt(document.getElementById('birthYear').value);
                 updateAnneesRestantes();
             }
@@ -1340,7 +1340,7 @@
         var anneesRestantes = anneesRestantesInput ? parseInt(anneesRestantesInput) : state.anneesRestantes;
 
         if (!salaire || salaire <= 0) return alert('Veuillez entrer votre salaire.');
-        if (isNaN(anneesCarriere)) return alert('Veuillez entrer vos annees de carriere.');
+        if (isNaN(anneesCarriere)) return alert('Veuillez entrer vos années de carrière.');
 
         state.salaire = salaire;
         state.anneesCarriere = anneesCarriere;
@@ -1404,7 +1404,7 @@
             pensionBrute.toLocaleString('fr-BE') + ' &euro; <small>/mois brut</small>';
 
         document.getElementById('resultNet').innerHTML =
-            '&#x2248; ' + pensionNette.toLocaleString('fr-BE') + ' &euro; net <small>/mois (estimation fiscale simplifiee)</small>';
+            '&#x2248; ' + pensionNette.toLocaleString('fr-BE') + ' &euro; net <small>/mois (estimation fiscale simplifiée)</small>';
 
         document.getElementById('resultAge').textContent = agePension + ' ans';
         document.getElementById('resultAnnees').textContent = totalAnnees + '/' + CONFIG.carriereComplete;
@@ -1415,9 +1415,9 @@
         var peculeSection = document.getElementById('peculeSection');
         var peculeText = document.getElementById('peculeText');
         peculeSection.style.display = 'flex';
-        peculeText.innerHTML = 'En plus de votre pension mensuelle, vous recevrez un <strong>pecule de vacances</strong> '
+        peculeText.innerHTML = 'En plus de votre pension mensuelle, vous recevrez un <strong>pécule de vacances</strong> '
             + 'd\'environ <strong>' + peculeAnnuel.toLocaleString('fr-BE') + ' &euro; brut/an</strong> '
-            + '(verse en mai, prorata ' + totalAnnees + '/' + CONFIG.carriereComplete + ' ans).';
+            + '(versé en mai, prorata ' + totalAnnees + '/' + CONFIG.carriereComplete + ' ans).';
 
         // Gap analysis (sur le NET pour être plus réaliste)
         var ecartNet = salaireMensuel - pensionBrute;
@@ -1432,9 +1432,9 @@
         if (ecartNet > 0) {
             gapSection.classList.remove('positive');
             gapBar.style.background = ratio < 50 ? 'var(--danger)' : 'var(--warning)';
-            gapTitle.innerHTML = '\u26A0\uFE0F Ecart avec votre revenu actuel';
+            gapTitle.innerHTML = '\u26A0\uFE0F Écart avec votre revenu actuel';
             gapText.innerHTML =
-                'Votre pension representera environ <strong>' + tauxRemplacement + '%</strong> de votre salaire brut actuel. '
+                'Votre pension représentera environ <strong>' + tauxRemplacement + '%</strong> de votre salaire brut actuel. '
                 + 'Il vous manquera environ <strong>' + ecartNet.toLocaleString('fr-BE') + ' &euro;/mois brut</strong> pour maintenir votre niveau de vie.';
         } else {
             gapSection.classList.add('positive');
@@ -1442,7 +1442,7 @@
             gapTitle.innerHTML = '\u2705 Bonne nouvelle !';
             gapText.innerHTML =
                 'Votre pension couvre <strong>' + tauxRemplacement + '%</strong> de votre salaire actuel. '
-                + 'Pensez tout de meme a diversifier avec une epargne complementaire.';
+                + 'Pensez tout de même à diversifier avec une épargne complémentaire.';
         }
 
         // Confiance
@@ -1461,7 +1461,7 @@
     // PARTAGE SOCIAL
     // =========================================================================
     function shareOn(platform) {
-        var text = 'MyPension.be est en pause ? Estimez votre pension legale belge gratuitement avec ce simulateur du Groupe DAP !';
+        var text = 'MyPension.be est en pause ? Estimez votre pension légale belge gratuitement avec ce simulateur du Groupe DAP !';
         var url = window.location.href;
 
         var shareUrl = '';
